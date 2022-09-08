@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erick Guerra">
+    <meta name="description" content="Sitio oficial de TacoToro">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Contactanos - TacoToro</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contactanos</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Principal</a>
+                </li>
+                <li>
+                    <a href="/#acerca-de">Acerca de</a>
+                </li>
+                <li>
+                    <a href="#menu">Nuestro Menú</a>
+                </li>
+                <li>
+                    <a href="horas.html">Horario de atención</a>
+                </li>
+            </ul>
+        </nav>
+        <figure>
+            <img src="img/burrito_400x260.png" alt="Burrito Extra Grande todos los ingredientes" title="Nuestra especialidad Burritos Extra Grandes!!" width="400" height="260">
+            <figcaption>
+                Burrito Extra Grande
+            </figcaption>
+        </figure>
+    </header>
+    <main>
+        <!--Nuestro contenido-->
+        <h2>Nuestro formulario de contacto</h2>
+        <section>
+            <form id="contacto" action="https://httpbin.org/get" method="get" target="_blank">
+                <fieldset>
+                    <legend>Envianos un mensaje</legend>
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                    </p>
+                    <p>
+                        <label for="email">Correo:</label>
+                        <input type="email" name="email" id="email" placeholder="Tu correo" autocomplete="off" required>
+                    </p>
+                    <p>
+                        <label for="mensaje">Tu mensaje</label>
+                        <br>
+                        <textarea style="resize:none;" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe el mensaje..." required></textarea>
+                    </p>
+                </fieldset>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+
+            </form>
+        </section>
+        <section>
+            <h2>Nuestra Tienda</h2>
+            <address>
+                14av. 99-99 zona 4 Ciudad de Guatemala, Guatemala
+                <br>
+                <br>
+                Telefono: <a href="tel:55555555">5555-5555</a>
+            </address>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>Copyright 2022<sup>&copy;</sup> TacoToro Oficial</p>
+    </footer>
+</body>
+
+</html>

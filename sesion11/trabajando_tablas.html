@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajando con tablas</title>
+</head>
+
+<body>
+    <h1>Trabajando con tablas</h1>
+    <h2>Uso de colspan</h2>
+
+    <table border="solid">
+        <tr>
+            <th>Nombre</th>
+            <!--col column ->columna. span -> abarca -->
+            <th colspan="3">Notas</th>
+        </tr>
+        <tr>
+            <td>Andrea</td>
+            <td>80</td>
+            <td>85</td>
+            <td>84</td>
+        </tr>
+        <tr>
+            <td>Luis</td>
+            <td>85</td>
+            <td>90</td>
+            <td>75</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table border="solid">
+        <tr>
+            <th style="visibility:collapse;"></th>
+            <th>Toyota</th>
+            <th>Audi</th>
+            <th>BMW</th>
+        </tr>
+        <tr>
+            <td>Bolsas de aire</td>
+            <td colspan="3">si</td>
+        </tr>
+        <tr>
+            <td>Cinturon de seguridad</td>
+            <td colspan="2">si</td>
+            <td>no</td>
+        </tr>
+        <tr>
+            <td>Asistente virtual</td>
+            <td>no</td>
+            <td colspan="2">si</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table border="solid">
+        <tr>
+            <th>Nombre</th>
+            <td>Felipe</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Telefono</th>
+            <td>123456</td>
+        </tr>
+        <tr>
+            <td>654321</td>
+        </tr>
+        <tr>
+            <td>874521</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <table border="solid">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan="3"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+    <h2>primer forma para la tabla</h2>
+    <table border="solid">
+        <tr>
+            <td>Bootstrap</td>
+            <td>⭐⭐⭐⭐</td>
+            <td>CSS(3)</td>
+            <td>⭐</td>
+            <td>Patron MVC</td>
+            <td>⭐⭐⭐</td>
+            <td>HTML(5)</td>
+            <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+            <td>Bootstrap</td>
+            <td>⭐⭐⭐⭐</td>
+            <td>CSS(3)</td>
+            <td>⭐</td>
+            <td>Patron MVC</td>
+            <td>⭐⭐⭐</td>
+            <td>HTML(5)</td>
+            <td>⭐⭐⭐⭐</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+    <h2>segunda forma para la tabla</h2>
+    <table>
+        <tr>
+            <table border="solid">
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>CSS(3)</td>
+                    <td>⭐</td>
+                    <td>Patron MVC</td>
+                    <td>⭐⭐⭐</td>
+                    <td>HTML(5)</td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+            </table>
+            <table border="solid">
+                <tr>
+                    <td>Patron MVC</td>
+                    <td>⭐⭐⭐</td>
+                    <td>HTML(5)</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Patron MVC</td>
+                    <td>⭐⭐⭐</td>
+                    <td>HTML(5)</td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

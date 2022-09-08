@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos semanticos 2</title>
+    <style>
+        .lateral{
+            background-color: grey;
+            border-style: ridge;
+        }
+        /*Aplicamos un mismo estilo a dos clases diferentes*/
+        #compartir_redes, #recomendados{
+            background-color: antiquewhite;
+            border-style: ridge;
+        }
+        #redes{
+            background-color: burlywood;
+            border-style: ridge;
+        }
+        article{
+            background-color: cornflowerblue;
+            border-style: ridge;
+        }
+      
+    </style>
+</head>
+<body>
+    <nav style="background-color: cadetblue;">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+        
+    </nav>
+
+    <aside class="lateral">
+        <section id="compartir_redes">
+            <h3>Compartir</h3>
+            <nav id="redes">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Email</a>
+            </nav>
+        </section>
+        <section id="recomendados">
+            <h3>Recomendados</h3>
+            <article>
+                <a href="#">Articulo relacionado</a>
+                <p>Descripción del articulo</p>
+            </article>
+            <article>
+                <a href="#">Articulo relacionado</a>
+                <p>Descripción del articulo</p>
+            </article>
+        </section>
+    </aside>
+
+    <section>
+        <h2>Elemento &lttime&gt</h2>
+        <p>Abierto a partir de 
+            <time>10:00</time> hasta <time>20:00</time>
+        </p>
+        <p>Tengo una reunión el día 
+            <time datetime="2022-08-27 13:00">sabado</time> 
+        </p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Mapas de imagen</h1>
+    <img src="imagen_escala.jpg" alt="libros y taza" usemap="#libromapa">
+
+    <map name="libromapa">
+        <area shape="rect" coords="33,94,247,325" href="#" alt="Libro 1">
+        <area shape="circle" coords="381,318,67" href="#" alt="Taza">
+    </map>
+
+    <h2>Poligono</h2>
+    <img src="pentagono.png" alt="figura pentagono" usemap="#pentagonoMapa">
+
+    <map name="pentagonoMapa">
+        <area shape="poly" coords="513,81,973,411,783,945,233,961,49,407" href="#" alt="pentagono">
+    </map>
+
+    <h2>Croissants</h2>
+    <img src="bocadillos.png" alt="bocadillos" usemap="#bocadilloMapa">
+    <map name="bocadilloMapa">
+        <area shape="poly" coords="447,13,362,51,244,116,181,180,150,351,182,444,218,431,271,358,369,285,419,225,450,106,465,43,446,11" href="#" alt="Bocadillo">
+
+        <area shape="poly" coords="15,454,45,467,70,394,69,378,125,231,172,187,178,142,176,92,155,85,110,129,94,188,110,209,52,372,39,384,15,454" href="#" alt="Cuchara">
+    </map>
+
+</body>
+
+</html>

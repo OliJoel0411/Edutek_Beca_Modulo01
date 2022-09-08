@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clase para revisar temas sobre formularios HTML">
+    <meta name="author" content="Erick Guerra">
+    <title>Formularios clase 2</title>
+</head>
+
+<body>
+    <main>
+        <h1>Mi formulario</h1>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Información personal</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" required>
+                </p>
+                <p>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese apellido" required>
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Ingresa password" name="password" id="password" required>
+                </p>
+                <p>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ingrese telefono" maxlength="9"
+                        minlength="5" required pattern="[1-9][0-9]{3}-[0-9]{4}">
+                </p>
+                <p>
+                    <label for="decada">Decada favorita</label>
+                    <input type="number" name="decada" id="decada" min="1950" max="2020" step="10" value="1990">
+                </p>
+                <p>
+                    <label for="fecha">Fecha nacimiento</label>
+                    <input type="date" max="2022-08-30" min="2022-08-15" name="fecha" id="fecha">
+                </p>
+                <p>
+                    <label for="hora">Ingrese hora</label>
+                    <input type="time" value="13:00" name="hora" id="hora">
+                </p>
+                <input type="submit" value="Enviar Informacion principal">
+            </fieldset>
+        </form>
+    </main>
+
+    <aside>
+        <form action="https://httpbin.org/post" method="post" target="_blank">
+            <fieldset>
+                <legend>Datos adicionales</legend>
+                <p>
+                    <label for="bebida">Bebida favorita</label>
+                    <select name="bebida" id="bebida">
+                        <option value="" disabled selected>Bebidas</option>
+                        <optgroup label="mas pedidos">
+                            <option value="Agua pura">Agua pura</option>
+                            <option value="Licuado">Licuado</option>
+                        </optgroup>
+
+                        <optgroup label="mas opciones">
+                            <option value="Te">Té</option>
+                            <option value="Cafe">Café</option>
+                        </optgroup>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="bebidas2">Bebida favorita 2</label>
+                    <select name="bebida2" id="bebida2" multiple size="7">
+                        <option value="" disabled selected>Bebidas</option>
+                        <optgroup label="mas pedidos">
+                            <option value="Agua pura">Agua pura</option>
+                            <option value="Licuado">Licuado</option>
+                        </optgroup>
+
+                        <optgroup label="mas opciones">
+                            <option value="Te">Té</option>
+                            <option value="Cafe">Café</option>
+                        </optgroup>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="bebida3">Bebida favorita 3</label>
+                    <input type="text" name="bebida3" id="bebida3" list="lista-bebidas">
+                    <datalist id="lista-bebidas">
+                        <option value="Agua pura">
+                        <option value="Licuado de frutas">
+                        <option value="Te">
+                        <option value="Café">
+                        <option value="Otro">
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Cual es tu comida favorita?</legend>
+                <p>
+                    <input type="radio" name="comida" id="tacos" value="tacos" checked>
+                    <label for="tacos">Tacos</label>
+                </p>
+                <p>
+                    <input type="radio" name="comida" id="hamburguesa" value="hamburguesa">
+                    <label for="hamburguesa">Hamburguesa</label>
+                </p>
+                <p>
+                    <input type="radio" name="comida" id="pizza" value="pizza">
+                    <label for="pizza">Pizza</label>
+                </p>
+            </fieldset>
+            <button type="submit">Enviar datos adicionales</button>
+
+        </form>
+    </aside>
+
+
+</body>
+
+</html>

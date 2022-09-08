@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atributo class</title>
+
+    <style>
+        /*case sensitive*/
+
+        .modulo {
+            background-color: #DDD8C4;
+            color: #7286A0;
+        }
+        #miTitulo{
+            color:tomato;
+            background-color: lightblue;
+        }
+        /*formato para el texto de descripcion*/
+        .texto-especial {
+            color: #42273B;
+            font-weight: bold;
+            font-size: large;
+        }
+        .espaciado{
+            padding: 10px;
+            margin: 20px;
+        }
+
+        th{
+            background-color: turquoise;
+            color: black;
+        }
+        td{
+            background-color: #7286A0;
+            color: #42273B;
+        }
+        .pie-tabla{
+            background-color: #DDD8C4;
+        }
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <h1 id="miTitulo">Trabajando con atributo class</h1>
+    <h1>Otro H1</h1>
+
+    <div class="modulo espaciado">
+        <h2>HTML</h2>
+        <p>HTML da estructura a <span class="texto-especial">nuestras páginas</span></p>
+    </div>
+
+    <div class="modulo espaciado">
+        <h2>CSS</h2>
+        <p>CSS describe la presentacion de <span class="texto-especial">nuestras páginas</span></p>
+    </div>
+
+    <div class="modulo espaciado">
+        <h2>JavaScript</h2>
+        <p>JavaScript hace interactivas <span class="texto-especial">nuestras páginas</span></p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody class="cuerpo-tabla">
+            <tr>
+                <td>Luis</td>
+                <td>Garcia</td>
+            </tr>
+            <tr>
+                <td>Mauricio</td>
+                <td>Rojas</td>
+            </tr>
+        </tbody>
+        <tfoot >
+            <tr>
+                <td class="pie-tabla" colspan="2">Total alumnos: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

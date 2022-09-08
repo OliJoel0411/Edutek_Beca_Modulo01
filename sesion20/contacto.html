@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <script>
+        function miFuncion(){
+            var x = document.getElementById("password");
+            if(x.type == "password"){
+                x.type = "text";
+            }else{
+                x.type = "password";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+
+        <h1>Ingresa tus datos</h1>
+
+        <form action="https://httpbin.org/get" method="get">
+            <p>
+                <label for="primer-nombre">Primer Nombre:</label>
+                <input type="text" name="primer-nombre" id="primer-nombre" placeholder="Nombre" required autofocus autocomplete="on">
+            </p>
+            <p>
+                <label for="primer-apellido">Primer Apellido:</label>
+                <input type="text" name="primer-apellido" id="primer-apellido" placeholder="Apellido" required>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="tu clave" required>
+                <label for="mostrar-clave">Mostrar password</label>
+                <input id="mostrar-clave" type="checkbox" onclick="miFuncion()">
+            </p>
+            <p>
+                <label for="telefono">Telefono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="55555555"  minlenght="8" maxlength="8" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </main>
+</body>
+
+</html>
